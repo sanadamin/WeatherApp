@@ -11,7 +11,7 @@ const forecast = (latitude,longtiude,callback)=>{
         }else if(body.err){
             callback('Unable to find location',undefined)
         }else{
-            callback(undefined, util.format('It is currenlt %s degrees out. There is %s % chance of rain',chalk.green(body.currently.temperature),chalk.red(body.currently.precipProbability)) )
+            callback(undefined, util.format('Hello, It is currenlt %s degrees out. There is %s % chance of rain',chalk.green(body.currently.temperature),chalk.red(body.currently.precipProbability)) )
         }
 
 
